@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+:root{
+    --clr-primary: rgb(226, 226, 240);
+    --clr-dark: #b8bbf7;
+    --clr-light:#FFF;
+    --fw-normal:400;
+    --fw-bold:700;
+    --fw-black: 900;
+    --grid: 1fr;
+
+}
+
+body {
+    margin: 0;   
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1,125rem ;
+    color: var(--clr-dark);
+    line-height: 1.6;
+  
+}
+h1, h2, h3 {
+    line-height:1 ;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    padding: .5em 1.5em;
+    margin-bottom: 5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+}
+.btn--primary{
+    background-color: rgb(11, 39, 43);
+    color: var(--clr-light);
+}
+.btn--primary:hover{
+    background-color: rgb(106, 164, 214) ;
+}
+.btn-outline{
+    outline: 3px solid var(--clr-dark);
+    outline-offset: -3px;
+    color:rgb(11, 39, 43);
+}
+.btn-outline:hover{
+    background: rgb(106, 164, 214);
+    border-color: rgb(106, 164, 214);
+    color: rgb(11, 39, 43);
+}
+.search-box{
+    display: flex;
+    position: absolute;
+    background: rgb(32, 67, 161);
+    border-radius: 40px;
+    padding:10px;
+}
+.search-btn{
+    color:rgb(8, 21, 58);
+    float: right;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background: rgb(32, 67, 161);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-text{
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    padding:0;
+    color:cornsilk;
+    font-size: 16px;
+    transition:.4s;
+    line-height: 40px;
+    width: 0px;
+
+
+}
+    header{
+        background-color: var(--clr-light);
+        padding: 0px;
+        text-align: center;
+
+    }
+    .nav__list  {
+       display: flex;
+       position: absolute;
+        justify-content: space-between;
+       
+        margin-top: 1em;
+       
+        list-style: none;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        font-weight: var(--fw-bold);
+        letter-spacing: 1px;
+       
+    }
+    .nav_list li{
+        display: inline-block;
+        margin: 9px;
+        padding: 0;
+    }
+    .nav__link{
+        text-decoration: none;
+        color: inherit;
+    }
+    .main{
+        padding: 3em 1em;
+        height: 100vh;
+        text-align: center;
+    }
+    .main--content{
+        background-image: url(../img/logo.jpg);
+      
+        background-size: 100% 100% ;
+        background-repeat: no-repeat;
+    }
+    .main__title{
+        line-height: 1;
+        font-weight: var(--fw-black);
+        font-size: 3rem;
+    
+    }
+
+    
+        
+    
